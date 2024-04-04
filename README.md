@@ -54,12 +54,3 @@ The Carbon Footprint Tracker is a web application designed to help users monitor
 
 By following these steps, you should now have the Carbon Footprint Tracker web application up and running locally on your machine. Feel free to explore and track your carbon emissions!
 ```
-
-
-
-
-
-
----
-
-Feel free to customize this template with specific details about your project, including installation instructions, setup steps, usage guidelines, and licensing information.
