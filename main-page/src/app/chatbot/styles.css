@@ -1,0 +1,164 @@
+/* Base Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+.page-main {
+  background-color: #2d6e28; /* Dark green background */
+}
+
+.page-heading {
+  color: #ffffff; /* White heading color */
+  margin-top: 40px;
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Add smooth transition */
+}
+.page-heading:hover {
+  color: #3182ce; /* Change color to blue on hover */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+}
+
+.input-prompt-area {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  border: 2px dashed #000000; /* Add dashed black border */
+  padding: 10px; /* Add padding to create space between content and border */
+  border-radius: 8px; /* Add border radius for rounded corners */
+}
+
+.input-prompt-area input {
+  background-color: #2d6e28; /* Dark green input background */
+  color: #ffffff; /* White text color */
+  width: 400px; /* Adjust input field width */
+  padding: 10px; /* Add padding for better spacing */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: 22px;
+}
+
+.input-prompt-area input::placeholder {
+  color: #cccccc; /* Light gray placeholder color */
+}
+
+.input-prompt-area input:focus {
+  outline: none;
+  border-color: #3182ce; /* Blue border color when input is focused */
+}
+
+.input-prompt-area button {
+  background-color: #3182ce; /* Blue button background color */
+  color: #ffffff; /* White button text color */
+  border: none;
+  padding: 10px 20px; /* Adjust button padding */
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease; /* Add smooth hover effect */
+}
+
+.input-prompt-area button:hover {
+  background-color: #2c5282; /* Darker blue color on button hover */
+}
+
+.wrapper {
+  background-color: hsla(105, 63%, 93%, 0.973); /* White background for chat area */
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
+}
+
+.white-text {
+  color: #000000; /* Black text color */
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+/* Dark Mode Styles */
+.dark .page-main {
+  background-color: #2d6e28; /* Dark green background in dark mode */
+}
+
+.dark .input-prompt-area input {
+  background-color: #2d6e28; /* Dark green input background in dark mode */
+}
+
+.dark .input-prompt-area input::placeholder {
+  color: #cccccc; /* Light gray placeholder color in dark mode */
+}
+
+.dark .input-prompt-area input:focus {
+  border-color: #3182ce; /* Blue border color when input is focused in dark mode */
+}
+
+.dark .input-prompt-area button {
+  background-color: #3182ce; /* Blue button background color in dark mode */
+}
+
+.dark .input-prompt-area button:hover {
+  background-color: #2c5282; /* Darker blue color on button hover in dark mode */
+}
+
+.dark .wrapper {
+  background-color: #ffffff; /* White background for chat area in dark mode */
+}
+
+.dark .white-text {
+  color: #000000; /* Black text color in dark mode */
+}
+
+/* Additional CSS Enhancements */
+
+/* Styling for scrollbar */
+.wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: #4a5568; /* Scrollbar thumb color */
+  border-radius: 4px;
+}
+
+/* Font Styling */
+.wrapper p {
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Bold Questions */
+.wrapper p.question {
+  font-weight: bold; /* Make questions bold */
+}
+
+/* Add spacing between consecutive questions */
+.wrapper p.question + p.question {
+  margin-top: 10px; /* Add 10px margin between consecutive questions */
+}
+
+/* Separate answer boxes */
+.answer-box {
+  background-color: #ffffff; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Add padding */
+  margin-top: 20px; /* Add margin at the top */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
+}
+
+/* Animation Effects */
+.input-prompt-area input, .input-prompt-area button {
+  transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.input-prompt-area input:focus, .input-prompt-area button:hover {
+  transform: translateY(-2px); /* Move input field and button slightly upwards */
+}
+
+/* Loading Indicator */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}

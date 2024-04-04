@@ -1,0 +1,31 @@
+/* styles.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Set green color theme */
+:root {
+  --background: #D1FAE5; /* Light green */
+  --foreground: #047857; /* Dark green */
+}
+
+.dark {
+  --background: #047857; /* Dark green */
+  --foreground: #D1FAE5; /* Light green */
+}
+
+/* Define custom styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* Two columns */
+  gap: 1rem; /* Gap between items */
+}
+
+.faq-card {
+  background-color: var(--background);
+  color: var(--foreground);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for card effect */
+}

@@ -1,0 +1,12 @@
+.image-prop-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Fill the height of the container */
+    width: 100%; /* Fill the width of the container */
+}
+
+.image-prop {
+    max-width: 100%; /* Ensure the image fits within the container */
+    max-height: 100%; /* Ensure the image fits within the container */
+}
