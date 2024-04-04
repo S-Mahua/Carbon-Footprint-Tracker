@@ -27,8 +27,6 @@ The Carbon Footprint Tracker is a web application designed to help users monitor
 ```markdown
 ## Getting Started
 
- Navigate to the Project Directory: 
-   ```bash
    cd carbon-footprint-tracker
    ```
 
